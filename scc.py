@@ -70,6 +70,8 @@ for node in all_nodes:
 leaders = list()
 while(len(all_nodes2) > 0):
     node = all_nodes2.pop()
+    print(node.label)
+"""    
     if node.explored2 == False:
         s = node.label
         leaders.append((s,0))
@@ -82,3 +84,4 @@ for leader in leaders:
     if count < 5:
         print(leader)
         count = count+1
+"""

@@ -54,9 +54,6 @@ for node in all_nodes:
     if node.explored == False:
         DFS1(node)
 
-for node in all_nodes2:
-    print(node.label)
-
 leaders = list()
 while(len(all_nodes2) > 0):
     node = all_nodes2.pop()
@@ -64,5 +61,5 @@ while(len(all_nodes2) > 0):
         s = node.label
         leaders.append((s,1))
         DFS2(node,s)
-#for leader in leaders:
-#    print(leader)
+for leader in leaders:
+    print(leader)
